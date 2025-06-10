@@ -1,0 +1,38 @@
+Hands-On Bash Script Example: Loops (While, Until) for Reading Syslog. 
+
+Bash scripting is a powerful way to automate tasks on Linux systems. In this hands-on guide, I explore two types of loops in Bash, while and until, by using them to read the contents of the /var/log/syslog file line by line.
+
+Here are the key elements used in the script.
+
+🔶 Loop: A programming structure that repeats a set of commands automatically,
+
+🔶While Loop: Runs while a condition is true 
+
+🔶 Until Loop: Runs until a condition becomes true
+
+🔶 Echo: Print message or variables to the terminal
+
+🔶 Shebang (#!/bin/bash): Interpret in bash shell
+
+🔶 x=1: Used to keep track of line numbers as you read each line of the syslog file
+
+🔶 Sleep 2: Delay for 2 seconds
+
+🔶 While read -r line: This starts the loop
+
+🔶 read -r line: Read one line at a time from the file or input
+
+🔶 -r: Avoids interpreting backslashes
+
+🔶 Do: Marks the starting of the loop's body
+
+🔶 "Line $x: $line;: Prints the line number ($x) and the actual content of the line ($line)
+
+🔶 (( x++ )): It increases the variable x by 1 (e.g., print each line as Line 1, Line 2, Line 3 etc.)
+
+🔶 done </var/log/syslog: This redirects the contents of /var/log/syslog into the while loop
+
+🔶 tail -n 5: Displays the last 5 lines of the specified file.
+
+Here is the walkthrough video link:
+https://www.youtube.com/watch?v=F6Lgg67SJ7s
